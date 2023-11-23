@@ -1,0 +1,10 @@
+-- GENERATING SELF SIGNED CERTIFICATE --
+
+openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365
+# req -> Request New Certificate
+# -x509 -> Self Signed Certificate
+# -newkey -> Secret Used in our Encryption
+# rsa -> Strongest form of Encryption
+  rsa:4096 -> Larger Size of Key Depicts Stronger Encryption
+# -nodes -> Allows us to Access New Private Key
+# -keyout -> Output of our Key
